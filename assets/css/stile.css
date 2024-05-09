@@ -1,0 +1,153 @@
+*{
+   /* outline: 1px solid red; */
+   margin: 0 auto;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+header {
+   height: 32vh;
+   background-image: url(../img/encabezado.jpg);
+   background-position: 60% 92%;
+   background-size: 80%;
+   /* width: 100vw; */
+
+   /* position: relative; */
+}
+
+.logo{
+   width: 10%;
+   margin: 10px;
+   border-radius: 10px;
+
+   position: absolute;
+   top: 10%;
+   left: 5%;
+}
+
+nav{
+   height: 8vh;
+   background-color: rgba(255, 0, 0, 0.5);
+   /* display: flex; */
+   text-align: right;
+}
+
+.menu li {
+   display: inline-block;
+}
+
+li {
+   list-style-type: none;
+}
+
+.menu li a {
+   text-decoration: none;
+   display: inline-block;
+   width: 140px;
+   height: 30px;
+   text-align: center;
+   vertical-align: middle;
+   background-color:  orange;
+   border-radius: 10px;
+   margin: 5px;
+   padding: 5px;
+   /* height: 100px; */
+
+   font-weight: 800;
+   transition: all .7s ease-in-out;
+}
+
+.menu li a:hover{
+   transform: scale(1.1) rotate(6deg);
+   background-color: green;
+}
+
+main{
+   height: 70vh;
+   background-color: brown ;
+   text-align: center;
+   vertical-align: middle;
+}
+
+.galeria{
+   width: 90vw;
+   height: 450px;
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+}
+
+.galeria img{
+   width: 15%;
+   object-fit: cover;
+   transition: all 1s ease-in-out;
+   margin: 0;
+}
+
+.galeria img:hover{
+   width: 50%;
+}
+
+.active{
+   background-color: green !important;
+   color: white;
+   /* font-size: 40px; */
+}
+
+main.container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 10px;
+   height: 1000px;
+}
+section{
+   display: flex;
+   background-color: white;
+   margin: 10px;
+   width: 400px;
+   justify-content: center;
+   /* height: 200px; */
+   border-radius: 1rem;
+   transition: all 0.5s;
+}
+
+section:hover{
+   transform: scale(1.2);
+}
+
+section img{
+   height: 100%;
+   width: 50%;
+   object-fit: contain;
+   background-color: rgba(255, 166, 0, 0.352);
+   border-radius: 1rem 0 0 1rem;
+}
+
+section div{
+   width: 50%;
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+section div h2{
+   width: 100%;
+   min-height: 80px;
+   text-align: center;
+   font-size: 2rem;
+}
+
+section div p{
+   padding: 1rem;
+}
+
+footer{
+   height: 5vh;
+   background-color: black;
+   color: white;
+
+   text-align: center;
+   padding: 5px;
+}
